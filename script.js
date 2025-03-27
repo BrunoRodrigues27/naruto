@@ -3,6 +3,11 @@ let espacoNomes = document.getElementById('listalutadores');
 let btnSortear = document.getElementById('btnSortear');
 let btnPlay = document.getElementById('btnPlay');
 let btnStop = document.getElementById('btnStop');
+let btnlimpar = document.getElementById('btnLimpar')
+
+btnlimpar.addEventListener('click', limpar)
+
+
 
 let listaNinjas = [];
 let musica = new Audio("narutoaudio.mp3");
@@ -35,9 +40,10 @@ btnEnviarNomes.addEventListener('click', function() {
     listaNinjas.push(ninja);
 
     let nome = document.createElement('li');
+
     nome.style.listStyle = 'none';
     nome.style.fontWeight = 'bold';
-    nome.style.color = 'white';
+    nome.style.color = 'black';
     nome.style.fontSize = '1.6em';
     nome.innerText = ninja;
 
@@ -70,3 +76,14 @@ btnSortear.addEventListener('click', function() {
     caixaNome1.style.color = 'white';
     caixaNome2.style.color = 'white';
 });
+
+
+function limpar(){
+    let nome1 = document.getElementById('nome1')
+    let nome2 = document.getElementById('nome2')
+    listaNinjas = [];
+    espacoNomes.innerHTML = '';
+    nome1.innerHTML = ''
+    nome2.innerHTML = ''
+    
+}

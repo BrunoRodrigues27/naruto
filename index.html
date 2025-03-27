@@ -10,7 +10,7 @@
     <main id="caixa-principal">
         <section id="caixa-nomes">
             <h1>Definição de confrontos</h1>
-            <input type="text" name="add-nome" id="adicionarnome" placeholder="Digite o nome do ninja.">
+            <input minlength="3" maxlength="15" type="text" name="add-nome" id="adicionarnome" placeholder="Digite o nome do ninja.">
             <button id="btnenviarnome">Enviar Nome</button>
         </section>
         <section>
@@ -31,6 +31,7 @@
         </section>
         <button id="btnPlay">Tocar Música</button>
         <button id="btnStop">Parar Música</button>
+        <button id="btnLimpar">Limpar lista</button>
     </main>
     <script src="script.js"></script>
 </body>
