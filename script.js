@@ -44,7 +44,7 @@ btnEnviarNomes.addEventListener('click', function() {
     nome.style.listStyle = 'none';
     nome.style.fontWeight = 'bold';
     nome.style.color = 'black';
-    nome.style.fontSize = '1.6em';
+    nome.style.fontSize = '13pt';
     nome.innerText = ninja;
 
     espacoNomes.appendChild(nome);
