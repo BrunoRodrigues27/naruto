@@ -61,7 +61,10 @@ img{
 
 div.sorteio-nome{
     background-color: rgba(255, 255, 255, 0.384);
-    width: 150px;
-    height: 50px;
+    width: 180px;
+    height: 80px;
     border: 2px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
