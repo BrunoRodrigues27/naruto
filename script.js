@@ -9,6 +9,10 @@ document.getElementById("btnPlay").addEventListener("click", function() {
     musica.play();
 });
 
+document.getElementById("btnStop").addEventListener("click", function() {
+    musica.pause();
+    musica.currentTime = 0; // Reinicia a música para o começo
+});
 
 btnEnviarNomes.addEventListener('click', enviar);
 
@@ -21,6 +25,9 @@ function enviar() {
 
     let nome = document.createElement('li');
     nome.style.listStyle = 'none'
+    nome.style.fontWeight = 'bold'
+    nome.style.color = 'white'
+    nome.style.fontSize = '1.6em'
     
     if (listaNinjas.includes(ninja)) {
         alert('Esse ninja já se encontra na lista.');
@@ -45,7 +52,7 @@ function sortear() {
         alert("É necessário ter pelo menos dois ninjas na lista para sortear.");
         return;
     }
-
+    
     // Sorteia dois índices aleatórios diferentes
     let indiceAleatorio1 = Math.floor(Math.random() * listaNinjas.length);
     let indiceAleatorio2 = Math.floor(Math.random() * listaNinjas.length);
@@ -57,7 +64,10 @@ function sortear() {
 
     let ninjaSorteado1 = listaNinjas[indiceAleatorio1];
     let ninjaSorteado2 = listaNinjas[indiceAleatorio2];
-
+    caixaNome1.style.fontSize ='1.8em'
+    caixaNome2.style.fontSize ='1.8em'
+    caixaNome1.style.color ='white'
+    caixaNome2.style.color ='white'
     // Exibe os nomes sorteados nos campos <p>
     caixaNome1.innerText = ninjaSorteado1;  // Exibe o nome sorteado no primeiro <p>
     caixaNome2.innerText = ninjaSorteado2;  // Exibe o nome sorteado no segundo <p>
