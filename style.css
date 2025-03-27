@@ -32,15 +32,21 @@ main#caixa-principal{
     text-align: center;
     border-radius: 5px;
     background-image: url('hd-stone-texture-131613998504.jpg');
-    box-shadow: 0px 0px 15px rgba(0, 153, 255, 0.466);
+    box-shadow: 0px 0px 25px rgba(2, 2, 2, 0.795);
 }
 
-input, button{
+input{
     padding: 10px;
     margin-top: 15px;
     margin-bottom: 15px;
     border-radius: 10px;
     outline: none;
+}
+
+button{
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: 10px;
 }
 
 button:hover{
@@ -52,6 +58,7 @@ button:hover{
 section#confrontos-sorteados{
     display: flex;
     justify-content: center;
+    margin-top: 10px;
     
 }
 
@@ -62,6 +69,7 @@ section#folhadenomes{
 }
 
 ul{
+    list-style: none;
     margin-top: 20px;
     min-width: 300px;
     columns: 2;
