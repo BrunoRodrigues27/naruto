@@ -73,10 +73,10 @@ btnSortear.addEventListener('click', function() {
     caixaNome1.innerText = listaNinjas[indiceAleatorio1];
     caixaNome2.innerText = listaNinjas[indiceAleatorio2];
 
-    caixaNome1.style.fontSize = '1.8em';
-    caixaNome2.style.fontSize = '1.8em';
-    caixaNome1.style.color = 'white';
-    caixaNome2.style.color = 'white';
+    caixaNome1.style.fontSize = '20pt';
+    caixaNome2.style.fontSize = '22pt';
+    caixaNome1.style.color = 'black';
+    caixaNome2.style.color = 'black';
 });
 
 
