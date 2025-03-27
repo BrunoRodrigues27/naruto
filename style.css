@@ -1,0 +1,67 @@
+@charset "UTF-8";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    background-color: green;
+    position: relative;
+    background-image: url(A_terceira_parte_do_Exame.PNG.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+h1,h2{
+    font-weight: bold;
+    color: white;
+    font-size: 1.6em;
+}
+
+main#caixa-principal{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 350px;
+    background-color: white;
+    padding: 15px;
+    text-align: center;
+    border-radius: 5px;
+    background-image: url('hd-stone-texture-131613998504.jpg');
+    box-shadow: 0px 0px 15px rgba(0, 153, 255, 0.466);
+}
+
+input, button{
+    padding: 10px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    outline: none;
+}
+
+button:hover{
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+
+section#confrontos-sorteados{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+img{
+    width: 40px;
+}
+
+div.sorteio-nome{
+    background-color: rgba(255, 255, 255, 0.384);
+    width: 150px;
+    height: 50px;
+    border: 2px solid black;
+}
