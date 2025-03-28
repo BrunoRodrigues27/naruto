@@ -6,6 +6,15 @@ let btnStop = document.getElementById('btnStop');
 let btnLimpar = document.getElementById('btnLimpar');
 let inputNome = document.getElementById('adicionarnome');
 let btnLimparNomesSorteados = document.getElementById('zerar-nomes-sorteados')
+let btnVoltarInicio = document.getElementById('voltar-inicio')
+let btnDuelo = document.getElementById('btnduelo')
+btnVoltarInicio.addEventListener('click', voltar)
+btnDuelo.addEventListener('click', irsorteio)
+
+function irsorteio(){
+    alert("nao vai")
+}
+
 
 
 let listaNinjas = [];
@@ -117,4 +126,8 @@ function zerar(){
     let sorteio2 = document.getElementById('nome2');
     sorteio1.innerHTML = ''
     sorteio2.innerHTML = ''
+}
+
+function voltar(){
+    window.location.href = 'index.html'
 }

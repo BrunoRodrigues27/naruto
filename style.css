@@ -9,7 +9,8 @@
 body{
     height: 100vh;
     background-color: green;
-    position: relative;
+    display: flex;
+    flex-direction: column;
     background-image: url(A_terceira_parte_do_Exame.PNG.webp);
     background-size: cover;
     background-repeat: no-repeat;
@@ -50,7 +51,7 @@ button{
 }
 
 button:hover{
-    background-color: black;
+    background-color: rgb(78, 78, 78);
     color: white;
     cursor: pointer;
 }
@@ -92,3 +93,4 @@ div.sorteio-nome{
     align-items: center;
     justify-content: center;
 }
+

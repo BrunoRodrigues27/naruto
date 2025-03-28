@@ -4,37 +4,46 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="estilo.css">
+    <link rel="stylesheet" href="mobile.css">
+    <link rel="stylesheet" href="pc.css">
 </head>
 <body>
-    <main id="caixa-principal">
-        <section id="caixa-nomes">
-            <h1>Definição de confrontos</h1>
-            <input minlength="3" maxlength="25" type="text" name="add-nome" id="adicionarnome" placeholder="Digite o nome do ninja.">
-            <button id="btnenviarnome">Enviar Nome</button>
-        </section>
-        <section id="folhadenomes">
-            <h2>Lista de lutadores</h2>
-            <ul id="listalutadores"></ul>
-        </section>
-        <section id="sorteador">
-            <button id="btnSortear">Sortear Confronto</button>
-        </section>
-        <section id="confrontos-sorteados">
-            <div class="sorteio-nome">
-                <p id="nome1"></p>
+    <header>
+        <h1>Naruto Batalha Ninja</h1>
+        <h3>Jogo de Cartas</h3>
+    </header>
+    <nav>
+        <li><a href="definicaoConfrontos.html">Sortear confrontos</a></li>
+    </nav>
+
+    <main>
+        <section id="desc">
+            <div class="caixas" id="primeira">
+                <h2>Descrição do jogo</h2>
+                <p>Naruto Batalha ninja é um jogo de cartas inspirado no anime Naruto criado pelo nosso querido <a target="_blank" href="https://naruto.fandom.com/pt-br/wiki/Masashi_Kishimoto">Masashi Kishimoto.</a> informacões tiradas de <a target="_blank" href="https://www.fandom.com/explore-pt-br?uselang=pt-br">Narutopedia</a></p>
             </div>
-            <img src="vs-removebg-preview.png" alt="">
-            <div class="sorteio-nome">
-                <p id="nome2"></p>
+
+            <div class="caixas" id="segunda">
+                <h2>Sobre o jogo.</h2>
+                <p>O jogo contém 1.000 cartas de ninjas variados e bijus.</p>
+                <p>O mínimo de jogadores são 2, o máximo são 8, o jogo só poderá ser iniciado com um número par de jogadores.</p>
+            </div>
+            
+            <div class="caixas" id="terceira">
+                <h2>Objetivo</h2>
+                <p>O objetivo consiste em somar a maior quantidade de pontos vencendo as batalhas, aquele jogador que terminar o jogo com o maior número de pontos, será o vencedor se tornando <strong>HOKAGE</strong></p>
+            </div>
+
+            <div id="naruto">
+                <img src="naruto chakra kurama.png" alt="">
             </div>
         </section>
-        <button id="btnPlay">Tocar Música</button>
-        <button id="btnStop">Parar Música</button>
-        <button id="btnLimpar">Limpar lista</button>
-        <div id="zerae">
-            <button id="zerar-nomes-sorteados">Limpar nomes sorteados</button>
-        </div>
+
+        <section id="foto">
+            <h2>KONOHA</h2>
+            <img id="cidade" src="Konohagakure_no_Sato.webp" alt="">
+        </section>
     </main>
     <script src="script.js"></script>
 </body>

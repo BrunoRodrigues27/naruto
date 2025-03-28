@@ -1,0 +1,99 @@
+@charset "UT*F-8";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: linear-gradient(to bottom, rgb(197, 135, 20), rgb(104, 68, 2));
+}
+
+header{
+    height: 260px;
+    display: flex;;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+    font-size: 2.3em;
+    background-image: url(naruto-logo--958x575.png);
+    background-position: center;
+    
+}
+
+ul{
+    text-decoration: none;
+    
+}
+
+li {
+    font-size: 2em;
+    list-style: none;
+}
+
+h1{
+    max-width: 600px;
+    text-align: center;
+}
+
+h1,h3{
+    color: rgb(247, 66, 0);
+}
+
+nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    background-color: rgb(70, 54, 54);
+    gap: 15px;
+}
+
+main {
+    background-color: white;
+    max-width: 800px;
+    margin: auto;
+    margin-top: 25px;
+}
+
+section#foto{
+    text-align: center;
+}
+
+p{
+    text-align: justify;
+    text-indent: 20px;
+    line-height: 1.9;
+    letter-spacing:  1.2px;
+    background-color: rgba(0, 0, 0, 0.781);
+    color: white;
+    padding: 10px;
+}
+
+h2{
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    background-color: orangered;
+    width: 100%;
+}
+
+img{
+    width: 120px;
+}
+
+div#naruto{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+button{
+    padding: 20px;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: orangered;
+}
