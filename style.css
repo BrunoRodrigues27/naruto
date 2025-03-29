@@ -6,20 +6,28 @@
     box-sizing: border-box;
 }
 
+@font-face {
+    font-family: 'Gagalin';
+    src: url('fontes/Gagalin-Regular.otf') format('truetype'); /* Ajuste o caminho se necessário */
+    font-weight: normal;
+    font-style: normal;
+}
+
 body{
+    overflow: hidden;
     height: 100vh;
-    background-color: green;
     display: flex;
     flex-direction: column;
-    background-image: url(A_terceira_parte_do_Exame.PNG.webp);
-    background-size: cover;
-    background-repeat: no-repeat;
+    background-image: url(hd-stone-texture-131613998504.jpg);
+    font-family: 'Gagalin', sans-serif;
+    backdrop-filter: blur(5px);
 }
 
 h1,h2{
     font-weight: bold;
     color: white;
     font-size: 1.6em;
+    letter-spacing: 3px;
 }
 
 main#caixa-principal{

@@ -3,17 +3,25 @@
 @media screen and (min-width: 600px) {
 
     header{
+        height: 320px;
         background-size: contain;
+        
     }
 
     h1{
         background-color:  rgb(2, 62, 102);
+        margin-top: 45px;
         margin-bottom: 15px;
     }
 
-    nav {
-        background-image: url(hd-stone-texture-131613998504.jpg);
+    h3{
+    
+
     }
+
+    nav {
+        height: 60px;
+    }   
 
     section#desc{
         width: 50%;
@@ -26,8 +34,8 @@
     section#foto{
         display: flex;
         flex-direction: column;
-        width: 65%;
-        padding: 15px;        
+        width: 45%;
+                
     }
 
     section#foto > h2{
@@ -40,7 +48,7 @@
     }
 
     img#cidade{
-        width: 100%;
+        width: 65%;
         height: 450px;
     }
 

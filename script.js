@@ -7,13 +7,8 @@ let btnLimpar = document.getElementById('btnLimpar');
 let inputNome = document.getElementById('adicionarnome');
 let btnLimparNomesSorteados = document.getElementById('zerar-nomes-sorteados')
 let btnVoltarInicio = document.getElementById('voltar-inicio')
-let btnDuelo = document.getElementById('btnduelo')
-btnVoltarInicio.addEventListener('click', voltar)
-btnDuelo.addEventListener('click', irsorteio)
 
-function irsorteio(){
-    alert("nao vai")
-}
+btnVoltarInicio.addEventListener('click', voltar)
 
 
 
